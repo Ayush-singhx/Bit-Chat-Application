@@ -12,13 +12,15 @@ A full-stack chat application built using React (Vite), MongoDB, Node.js, Expres
 - **Tailwind CSS**: Utility-first CSS framework
 - **DaisyUI**: Tailwind CSS components
 
-![React](https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg)
-![MongoDB](https://upload.wikimedia.org/wikipedia/en/4/45/MongoDB-Logo.svg)
-![Node.js](https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg)
-![Express](https://upload.wikimedia.org/wikipedia/commons/6/64/Expressjs.png)
-![Socket.io](https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg)
-![Tailwind CSS](https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg)
-![DaisyUI](https://daisyui.com/images/logo.svg)
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-000000?style=for-the-badge&logo=express&logoColor=white)
+![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=for-the-badge&logo=socket.io&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
+![DaisyUI](https://img.shields.io/badge/DaisyUI-5A67D8?style=for-the-badge&logo=daisyui&logoColor=white)
+
 
 ## Features
 
@@ -31,52 +33,53 @@ A full-stack chat application built using React (Vite), MongoDB, Node.js, Expres
 
 1. **Clone the repository**
     ```bash
-    git clone https://github.com/yourusername/MERNChatApp.git
-    cd MERNChatApp
+    git clone https://github.com/mAyush24/fullstack-chat-app.git
+    cd fullstack-chat-app
     ```
 
 2. **Install dependencies**
     ```bash
-    # Install server dependencies
-    cd server
+    # Install frontend dependencies
+    cd frontend
     npm install
 
-    # Install client dependencies
-    cd ../client
+    # Install backend dependencies
+    cd backend
     npm install
     ```
 
 3. **Set up environment variables**
 
-    Create a `.env` file in the `server` directory and add the following:
+    Create a `.env` file in the `backend` directory and add the following:
     ```env
     MONGO_URI=your_mongodb_connection_string
-    JWT_SECRET=your_jwt_secret
+    PORT=5001
+    SECRET_KEY=your_jwt_secret
+    CLOUDINARY_CLOUD_NAME=your_cloudinary_cloud_name
+    CLOUDINARY_API_KEY=your_cloudinary_api_key
+    CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+    NODE_ENV=development
     ```
 
 4. **Run the application**
 
     ```bash
     # Run server
-    cd server
-    npm start
+    cd backend
+    npm run dev
 
     # Run client
-    cd ../client
+    cd frontend
     npm run dev
     ```
 
 5. **Open your browser**
 
-    Navigate to `http://localhost:3000` to see the application in action.
+    Navigate to `http://localhost:5173` to see the application in action.
 
 ## Contributing
 
 Contributions are welcome! Please open an issue or submit a pull request.
-
-## License
-
-This project is licensed under the MIT License.
 
 ## Contact
 
