@@ -2,15 +2,18 @@
 
 A full-stack chat application built using React (Vite), MongoDB, Node.js, Express, Socket.io, Tailwind CSS, and DaisyUI.
 
-## Tech Stack
 
-- **React (Vite)**: Frontend framework
-- **MongoDB**: NoSQL database
-- **Node.js**: JavaScript runtime
-- **Express**: Web framework for Node.js
-- **Socket.io**: Real-time communication
-- **Tailwind CSS**: Utility-first CSS framework
-- **DaisyUI**: Tailwind CSS components
+## 🔧 Tech Stack
+
+| **Technology**      | **Usage**                                      |
+|----------------------|-----------------------------------------------|
+| **React** | Frontend development for a fast and efficient UI. |
+| **Tailwind CSS** | Styling framework for responsive design.       |
+| **DaisyUI** | Pre-styled UI components for rapid development.|
+| **NodeJS** | Backend runtime environment.                  |
+| **Express** | Backend framework for building APIs.          |
+| **Socket.IO** | Real-time bi-directional communication.       |
+| **MongoDB** | NoSQL database for scalable data storage.     |
 
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
@@ -20,14 +23,16 @@ A full-stack chat application built using React (Vite), MongoDB, Node.js, Expres
 ![Socket.IO](https://img.shields.io/badge/Socket.IO-010101?style=for-the-badge&logo=socket.io&logoColor=white)
 ![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![DaisyUI](https://img.shields.io/badge/DaisyUI-5A67D8?style=for-the-badge&logo=daisyui&logoColor=white)
+---
 
-
-## Features
-
-- Real-time messaging
-- User authentication
-- Responsive design
-- Customizable UI with DaisyUI
+## 🛠 Features
+- **Real-Time Chat**: Powered by Socket.IO for instant communication.
+- **Responsive Design**: Built with Tailwind CSS and DaisyUI for a visually appealing, mobile-friendly interface.
+- **User Authentication**: Secure login and registration system.
+- **Group Chats**: Support for creating and managing group conversations.
+- **Typing Indicators**: Real-time feedback for user activity.
+- **Message Notifications**: Stay informed about new messages.
+- **Scalable Backend**: Built with Node.js and Express, with MongoDB as the database.
 
 ## Project Setup
 

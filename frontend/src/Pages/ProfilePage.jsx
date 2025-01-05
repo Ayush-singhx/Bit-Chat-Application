@@ -2,6 +2,7 @@ import React from 'react'
 import { Camera, Mail, User } from "lucide-react";
 import { useState } from "react";
 import { useAuthStore } from "../store/useAuthStore.js";
+import { Link } from "react-router-dom";
 
 function ProfilePage() {
 
@@ -24,9 +25,10 @@ function ProfilePage() {
   };
 
   return (
-    <div className="h-screen pt-10">
+    <div className="h-screen pt-24">
       <div className="max-w-2xl mx-auto p-4 py-8">
         <div className="bg-base-300 rounded-xl p-6 space-y-8">
+          <Link to="/">back</Link>
           <div className="text-center">
             <h1 className="text-2xl font-semibold ">Profile</h1>
             <p className="mt-2">Your profile information</p>
