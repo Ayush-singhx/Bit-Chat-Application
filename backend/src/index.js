@@ -6,7 +6,7 @@ import messageRoutes from './routes/message.route.js';
 import cookieParser from 'cookie-parser';
 import { connectDB } from './lib/db.js';
 import {app, server} from './lib/socket.js';
-const compression = require('compression');
+import compression from 'compression';
 import cors from 'cors';
 import path from 'path';
 
