@@ -6,13 +6,15 @@ import messageRoutes from './routes/message.route.js';
 import cookieParser from 'cookie-parser';
 import { connectDB } from './lib/db.js';
 import {app, server} from './lib/socket.js';
+const compression = require('compression');
 import cors from 'cors';
 import path from 'path';
 
 dotenv.config();
 const PORT = process.env.PORT;
 const __dirname = path.resolve();
-
+app.use(express.static('dist', { maxAge: '1y' }));
+app.use(compression()); // use compression middleware
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
