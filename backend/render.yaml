@@ -2,7 +2,7 @@ services:
   - type: web
     name: mern-chat-app-backend
     env: node
-    buildCommand: npm install
+    buildCommand: npm install && npm install compression
     startCommand: npm start
     envVars:
       - key: NODE_ENV

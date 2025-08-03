@@ -59,6 +59,13 @@
 
 ## Testing the Deployment
 
+1. Make sure all dependencies are installed correctly. If you encounter any missing package errors, you may need to manually install them:
+
+```bash
+npm install compression
+# Add any other missing packages as needed
+```
+
 1. Open your Vercel frontend URL in a browser.
 
 2. Try to sign up or log in to test the authentication.
