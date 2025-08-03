@@ -59,6 +59,35 @@
 
 ## Testing the Deployment
 
+1. Test user registration and login functionality.
+2. Test sending messages and real-time chat functionality.
+
+## Troubleshooting Common Issues
+
+### CORS Configuration
+
+The application is now configured to allow CORS requests from any origin while supporting credentials. This means:
+
+1. The Express server in `index.js` has CORS configured with `origin: true` (reflects the request origin)
+2. The Socket.IO server in `socket.js` also has CORS configured with `origin: true`
+
+This configuration allows the backend to accept requests from any frontend domain while still supporting credentials (cookies, authorization headers). The `origin: true` setting automatically reflects the requesting origin in the `Access-Control-Allow-Origin` response header, which is required when using credentials.
+
+> **Note**: Using `origin: '*'` (wildcard) with `credentials: true` is not allowed by browsers and will cause CORS errors. <mcreference link="https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS/Errors/CORSNotSupportingCredentials" index="1">1</mcreference>
+
+### If You Need to Restrict CORS
+
+If you want to restrict CORS to specific origins for security reasons, you can modify the CORS configuration in both files to use the `FRONTEND_URL` environment variable again:
+
+```javascript
+// In index.js and socket.js
+origin: process.env.NODE_ENV === 'production' 
+    ? process.env.FRONTEND_URL 
+    : "http://localhost:5173",
+```
+
+Then ensure the `FRONTEND_URL` in your backend environment variables (both in Render dashboard and .env.production) is set to the exact base URL of your frontend without any trailing slashes or paths (e.g., `https://bitchat-three.vercel.app`, not `https://bitchat-three.vercel.app/login`).
+
 1. Make sure all dependencies are installed correctly. If you encounter any missing package errors, you may need to manually install them:
 
 ```bash
