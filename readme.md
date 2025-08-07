@@ -88,4 +88,4 @@ Contributions are welcome! Please open an issue or submit a pull request.
 
 ## Contact
 
-For any inquiries, please contact [ayush2524mishra@gmail.com].
+For any inquiries, please contact [ayushsingh2081@mail.com].
