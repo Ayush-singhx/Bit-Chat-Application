@@ -16,7 +16,7 @@ function Navbar() {
                                 {/* <MessageSquare className="w-5 h-5 text-primary" /> */}
                                 <img src="/logo.png" alt="" />
                             </div>
-                            <h1 className="text-lg font-bold">Chatty</h1>
+                            <h1 className="text-lg font-bold">Bit-Chat</h1>
                         </Link>
                     </div>
 
